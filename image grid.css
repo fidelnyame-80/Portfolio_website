@@ -1,0 +1,234 @@
+.one{
+    background-color: red;
+}
+
+.two{
+    background: green;
+}
+
+.three {
+    background-color: orange;
+}
+
+.four{
+    background-color: blue;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(2, 150px);
+    gap: 5px;
+    clip-path: inset(0 round 15px);
+    
+overflow: hidden;
+padding-top: 20px;
+}
+
+.one{
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / span 2; /* Spans 2 rows */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.one img{
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / span 2; /* Spans 2 rows */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.two{
+    grid-column: 2;
+    grid-row: 1;
+    border-top-right-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.two img{
+    grid-column: 2;
+    grid-row: 1;
+    border-top-right-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.three{
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.three img{
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.a {
+    background-color: rgb(0, 255, 157);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.b{
+    background-color: bisque;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    padding-top: 20px;
+    padding-left: 40px;
+    border-radius: 20px;
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    
+}
+
+.a{
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+}
+
+.a img{
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.b{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.b img{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
+    overflow-y: visible;
+    border-bottom: 20px;
+}
+
+.c{
+    background-color: red;
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.c img{
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.d{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+}
+
+.d img{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    overflow:auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.e{
+    background-color: teal;
+    grid-column: 2;
+    grid-row: 1/span 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.e img{
+    grid-column: 2;
+    grid-row: 1/span 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-container1, .grid-container2, .grid-container3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+
+/* Explanation:
+
+transition: This property applies to the grid containers, making their 
+transformation smooth when hovered.
+
+transform: translateY(-10px) scale(1.05);: This moves the grid container up
+ by 10 pixels and scales it to 105% of its original size.
+
+box-shadow: Adding a shadow effect on hover can enhance the visual
+ feedback.*/
+
+.grid-container1:hover, 
+.grid-container2:hover, 
+.grid-container3:hover {
+    transform: translateY(-10px) scale(1.05); /* Move up and slightly enlarge */
+  }
+

@@ -1,0 +1,587 @@
+{
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: scroll; /* Ensures vertical scrolling as well */
+
+    white-space: nowrap; /* Prevents wrapping of content */
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h2{
+    padding-left: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.horizontal-list  {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.horizontal-list a{
+    text-decoration: none;
+}
+
+.horizontal-list li{
+    margin-right: 20px;
+}
+
+.cart-and-order{
+    text-decoration: none;
+    display: flex;
+    margin-right: 30px;
+}
+
+.cart-and-order li{
+    margin-right: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh; /* 25% of the viewport height */
+    width: 95vw; /* 80% of the viewport width */
+    min-width: 720px;
+    margin: 0 auto; /* Centers the hero section horizontally */
+    background-color: #f4ebe4; /* Light background color matching the screenshot */
+    padding: 0px;
+    overflow: auto;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjusts the image to cover the container without stretching */
+    object-position: center; /* Centers the image within the container */
+    display: block;
+}
+
+.hero-text {
+    position: absolute; /* Positions the text absolutely within the hero container */
+    top: 50%; /* Moves the text halfway down the container */
+    left: 50%; /* Moves the text halfway across the container */
+    transform: translate(-50%, -50%); /* Centers the text in both directions */
+    color: white; /* Makes the text white (or choose a contrasting color) */
+    text-align: center; /* Centers the text */
+}
+
+/* Styling for the heading and paragraph inside the text container */
+.hero-text h1 {
+    font-size: 48px; /* Adjust based on your preference */
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+
+    }
+
+
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
+    z-index: 0; /* Ensures the overlay is above the image but below the text */
+}
+
+.items-section h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.truck {
+    color: rgb(31, 30, 30);
+    font-size: 30px;
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+.money {
+    color:  rgb(31, 30, 30);
+    font-size: 30px;
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+.globe {
+    color: rgb(31, 30, 30);
+    font-size: 30px;
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+.items-section {
+    display: flex;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    border-top: 0px;
+    justify-content: center;
+    gap: 80px;
+}
+
+.line {
+    padding-top: 30px;
+    border: none;
+    color: black;
+    width: 90vw;
+    height: 1px;
+    margin: 20px auto;
+    min-width: 720px;
+}
+
+.fast {
+    color: rgb(31, 30, 30);
+    font-size: 30px;
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+.line2  {
+    padding-top: 0px;
+    border: none;
+    border-top: 0px;
+    color: black;
+    width: 90vw;
+    height: 1px;
+    margin: 20px auto;
+    min-width: 720px;
+}
+
+.line3  {
+    padding-top: 40px;
+    border: none;
+    border-top: 0px;
+    color: black;
+    width: 90vw;
+    height: 1px;
+    margin: 20px auto;
+    min-width: 720px;
+}
+
+.future-projects {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: rgba(156, 152, 152,0.05);
+}
+
+.one{
+    background-color: red;
+}
+
+.two{
+    background: green;
+}
+
+.three {
+    background-color: orange;
+}
+
+.four{
+    background-color: blue;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(2, 150px);
+    gap: 5px;
+    clip-path: inset(0 round 15px);
+    
+overflow: hidden;
+padding-top: 20px;
+}
+
+.one{
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / span 2; /* Spans 2 rows */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.one img{
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / span 2; /* Spans 2 rows */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.two{
+    grid-column: 2;
+    grid-row: 1;
+    border-top-right-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.two img{
+    grid-column: 2;
+    grid-row: 1;
+    border-top-right-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.three{
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.three img{
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.a {
+    background-color: rgb(0, 255, 157);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.b{
+    background-color: bisque;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    padding-top: 20px;
+    padding-left: 40px;
+    border-radius: 20px;
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    
+}
+
+.a{
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+}
+
+.a img{
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.b{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.b img{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
+    overflow-y: visible;
+    border-bottom: 20px;
+}
+
+.c{
+    background-color: red;
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.c img{
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.d{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+}
+
+.d img{
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    overflow:auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.e{
+    background-color: teal;
+    grid-column: 2;
+    grid-row: 1/span 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.e img{
+    grid-column: 2;
+    grid-row: 1/span 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-container1, .grid-container2, .grid-container3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+
+/* Explanation:
+
+transition: This property applies to the grid containers, making their 
+transformation smooth when hovered.
+
+transform: translateY(-10px) scale(1.05);: This moves the grid container up
+ by 10 pixels and scales it to 105% of its original size.
+
+box-shadow: Adding a shadow effect on hover can enhance the visual
+ feedback.*/
+
+.grid-container1:hover, 
+.grid-container2:hover, 
+.grid-container3:hover {
+    transform: translateY(-10px) scale(1.05); /* Move up and slightly enlarge */
+  }
+
+
+
+.resources {
+    display: grid;
+    grid-template-rows: repeat(1,80px);
+    grid-template-columns: repeat(5, 150px);
+    gap: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.google img{
+    grid-row: 1;
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.youtube img{
+    grid-row: 1;
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.chatgpt img{
+    grid-row: 1;
+    grid-column: 3;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pexels img{
+    grid-row: 1;
+    grid-column: 4;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pinterest img{
+    grid-row: 1;
+    grid-column: 5;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(112, 111, 111);
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* The grid didn't work properly because grid-column and grid-row were applied to <p> elements, 
+   instead of their parent containers (e.g., .Fidel, .address, etc.). 
+   Grid positioning should be applied to the container elements, not the content inside. */
+
+   .Footer-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    grid-template-rows: repeat(4, auto);   /* 4 rows with automatic height */
+    margin-left: 80px;
+    color: #f4ebe4;
+}
+
+.Fidel {
+    grid-column: 1;
+    grid-row: 1;
+    color: black;
+}
+
+.address {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.email {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.number {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.Info {
+    grid-column: 2;
+    grid-row: 1;
+    color: black;
+}
+
+.help {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+.FAQ {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.Howto {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.About {
+    grid-column: 3;
+    grid-row: 1;
+    color: black;
+}
+
+.Aboutme {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.contact {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.Privacy {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.follow {
+    grid-column: 4;
+    grid-row: 1;
+    color: black;
+}
+
+.follow2 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.Join {
+    grid-column: 4;
+    grid-row: 3;
+}
