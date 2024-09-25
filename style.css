@@ -481,8 +481,6 @@ box-shadow: Adding a shadow effect on hover can enhance the visual
 footer {
     background-color: rgb(112, 111, 111);
     bottom: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     
 }
 
